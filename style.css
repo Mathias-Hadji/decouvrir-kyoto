@@ -1,0 +1,252 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Nunito sans, sans-serif;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    color: #fff;
+    background: rgb(65, 65, 65);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo-website-menu {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-website-menu::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+
+.list-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(65, 65, 65);
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav a::after {
+    display: block;
+    content: '';
+    width: 100%;
+    transform: scale(0);
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav a:hover::after {
+    transform: scale(1);
+}
+
+.icon-menu-small-screen {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 50px;
+    display: none;
+    filter: invert(98%) sepia(3%) saturate(74%) hue-rotate(241deg) brightness(118%) contrast(100%);
+    cursor: pointer;
+}
+
+
+
+/* ---------- Navigation Responsive ---------- */
+
+@media screen and (max-width: 785px) {
+
+    .icon-menu-small-screen {
+        display: block;
+    }
+
+    .list-nav {
+        flex-direction: column;
+        height: 180px;
+        display: none;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .list-nav li {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .logo-website-menu {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+
+
+/* ---------- Section Home ---------- */
+
+.container-home {
+    width: 100%;
+    height: 860px;
+    background: url('/ressources/kyoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-home img {
+    width: 250px;
+    margin-top: 100px;
+}
+
+.container-home h1 {
+    font-family: Merienda One;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container-home p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container-home a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #994242;
+    width: 150px;
+    margin: 30px auto;
+    border-radius: 9999px;
+    padding: 15px 5px;
+}
+
+.logo-website {
+    padding: 50px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* ---------- Section Que faire à kyoto ? ---------- */
+
+.container-activity {
+    background: #e7e7e7;
+    width: 100%;
+    height: 3000px;
+    position: relative;
+}
+
+
+.line-left {
+    position: absolute;
+    width: 2px;
+    left: 25%;
+    height: 100%;
+    background: rgb(66, 66, 66);
+}
+
+.line-right {
+    position: absolute;
+    width: 2px;
+    left: 75%;
+    height: 100%;
+    background: rgb(66, 66, 66);
+}
+
+.title-section {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 50px 0;
+    position: relative;
+    color: rgb(46, 46, 46);
+}
+
+.bloc-activity {
+    width: 700px;
+    height: 700px;
+    background: rgb(66, 66, 66);
+    color: #fff;
+    padding: 30px 10px;
+    position: absolute;
+    left: 35%;
+    transform:translateX(-50%);
+}
+
+.bloc-activity h3 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.bloc-activity p {
+    line-height: 2.5;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.bloc-activity a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #994242;
+    border-radius: 9999px;
+    padding: 20px 10px;
+    width: 200px;
+    text-align: center;
+    margin-left: 75px;
+}
+
+
+.bloc-activity img {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+}
