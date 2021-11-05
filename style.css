@@ -125,51 +125,113 @@ nav a:hover::after {
 
 .container-home {
     width: 100%;
-    height: 860px;
-    background: url('/ressources/kyoto.jpg');
+    height: 100vh;
+    background-image: url('/ressources/kyoto.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container-home img {
-    width: 250px;
-    margin-top: 100px;
+.bloc-logo-le-kyoto {
+    width: 100%;
+    padding-top: 180px;
+    display: flex;
+    justify-content: center;
 }
 
-.container-home h1 {
-    font-family: Merienda One;
+.logo-le-kyoto {
+    width: 250px;
+    display: block;
+}
+
+.title-home {
+    font-family: Merienda One, sans-serif;
     text-align: center;
     color: #fff;
     font-size: 70px;
     text-shadow: 1px 1px 2px black;
 }
 
-.container-home p {
+.subtitle-home {
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px 0;
+    font-weight: bold;
     text-shadow: 1px 1px 2px black;
 }
 
-.container-home a {
+.btn-home {
     display: block;
     text-align: center;
     text-decoration: none;
     color: #fff;
     background: #994242;
-    width: 150px;
+    width: 200px;
     margin: 30px auto;
     border-radius: 9999px;
     padding: 15px 5px;
+    font-size: 22px;
+    transition: all 0.2s ease-in-out;
 }
 
-.logo-website {
-    padding: 50px 0 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.btn-home:hover {
+    transform: scale(1.1);
+    background: #a11c1c;
+}
+
+
+
+
+/* ---------- Responsive Home ---------- */
+
+@media screen and (max-width: 785px) {
+
+    .container-home {
+        height: 550px;
+    }
+
+    .bloc-logo-le-kyoto {
+        padding-top: 100px;
+    }
+    
+    .logo-le-kyoto {
+        width: 250px;
+    }
+
+    .title-home {
+        font-size: 45px;
+    }
+
+    .subtitle-home {
+        font-size: 20px;
+    }
+
+    .btn-home {
+        font-size: 18px;
+        width: 150px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .container-home {
+        height: 450px;
+    }
+
+    .title-home {
+        font-size: 30px;
+    }
+
+    .logo-le-kyoto {
+        width: 150px;
+    }
+
+    .btn-home {
+        font-size: 15px;
+        width: 120px;
+    }
 }
 
 
