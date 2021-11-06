@@ -481,6 +481,7 @@ nav a:hover::after {
 }
 
 @media screen and (max-width: 600px) {
+
     .section-activities {
         grid-template-rows: 150px repeat(6, auto) 100px;
         grid-template-columns: 100%;
@@ -492,7 +493,7 @@ nav a:hover::after {
     }
 
     .section-activities h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .bloc,
@@ -512,5 +513,47 @@ nav a:hover::after {
     .bloc-txt-left h3,
     .bloc-txt-right h3 {
         font-size: 25px;
+    }
+}
+
+
+
+/* ---------- Section Parallax ---------- */
+
+.section-parallax {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgb(65, 65, 65);
+    background-image: url("/ressources/parallax-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.txt-japan-parallax {
+    font-size: 65px;
+    color: #f1f1f1;
+}
+
+.txt-fr-parallax {
+    color: #f1f1f1;
+    font-size: 25px;
+}
+
+
+/* ---------- Responsive Section Parallax ---------- */
+
+
+@media screen and (max-width: 400px) {
+    
+    .txt-japan-parallax {
+        font-size: 55px;
+        color: #f1f1f1;
     }
 }
