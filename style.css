@@ -533,7 +533,6 @@ nav a:hover::after {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
 }
 
 .txt-japan-parallax {
@@ -555,5 +554,133 @@ nav a:hover::after {
     .txt-japan-parallax {
         font-size: 55px;
         color: #f1f1f1;
+    }
+}
+
+
+
+
+/* ---------- Section Price table ---------- */
+
+.section-price-table {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.section-price-table h2 {
+    text-align: center;
+    font-size: 45px;
+    margin: 120px 0 20px;
+    padding: 0 30px;
+}
+
+.section-price-table hr {
+    width: 200px;
+    border: none;
+    background:#333;
+    height: 1px;
+    margin: 20px auto 100px;
+}
+
+.container-cards-price {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-price {
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+    transition: all 0.2s ease-in-out;
+}
+
+.card-price:hover {
+    transform: scale(1.1);
+}
+
+.card-price h3 {
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 35px;
+    background: rgb(119, 119, 119);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    color: #f1f1f1;
+}
+
+.card-price:nth-child(2) h3 {
+    background: rgb(73, 73, 73);
+}
+
+.card-price:nth-child(3) h3 {
+    background: rgb(36, 36, 36);
+}
+
+.card-price span {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.card-price p {
+    font-size: 18px;
+    border-top: 1px solid rgb(189, 189, 189);
+    padding: 20px 10px;
+}
+
+.card-price p:last-of-type {
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.card-price p:nth-child(odd) {
+    background: rgb(223, 223, 223);
+}
+
+.card-price a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #333;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 9999px;
+    color: #333;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 20px auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-price a:hover {
+    background: #333;
+    color: #f1f1f1;
+}
+
+
+
+/* ---------- Responsive Section Price table ---------- */
+
+@media screen and (max-width: 900px) {
+    .section-price-table h2 {
+        font-size: 35px;
+        margin: 80px 0 20px;
+    }
+
+    .section-price-table hr {
+        margin: 20px auto 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section-price-table h2 {
+        font-size: 30px;
+        padding: 0 10px;
     }
 }
