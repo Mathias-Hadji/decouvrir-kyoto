@@ -568,6 +568,7 @@ nav a:hover::after {
 }
 
 .section-price-table h2 {
+    color: #333;
     text-align: center;
     font-size: 45px;
     margin: 120px 0 20px;
@@ -668,6 +669,7 @@ nav a:hover::after {
 /* ---------- Responsive Section Price table ---------- */
 
 @media screen and (max-width: 900px) {
+
     .section-price-table h2 {
         font-size: 35px;
         margin: 80px 0 20px;
@@ -679,8 +681,112 @@ nav a:hover::after {
 }
 
 @media screen and (max-width: 425px) {
+    
     .section-price-table h2 {
         font-size: 30px;
         padding: 0 10px;
     }
+}
+
+
+
+
+
+/* ---------- Section Contact ---------- */
+
+
+.section-contact {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-top: 1px solid #333;
+}
+
+.section-contact h2 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    padding: 70px 0 0 0;
+    margin-bottom: 50px;
+}
+
+.form-contact {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.form-contact label {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    color: #aaa;
+}
+
+.form-contact input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0;
+    margin-bottom: 45px;
+    color: #666;
+    font-size: 18px;
+}
+
+.form-contact textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 3px;
+    padding: 5px;
+    outline: none;
+    background: #f1f1f1;
+    resize: none;
+    font-size: 18px;
+}
+
+.form-contact button {
+    color: #333;
+    outline: none;
+    border-radius: 9999px;
+    border: none;
+    font-size: 15px;
+    border: 1px solid #333;
+    width: 150px;
+    margin-top: 20px;
+    height: 40px;
+    background-image: linear-gradient(to right, transparent 50%,  50%, rgb(65,65,65));
+    background-size: 200%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.form-contact button:hover {
+    background-position: 100%;
+    color: #f1f1f1;
+}
+
+
+
+/* ---------- Responsive Section Contact ---------- */
+
+@media screen and (max-width: 1300px) {
+    
+    .section-contact h2 {
+        padding: 30px 0 0 0;
+    }
+}
+
+
+
+
+/* ---------- Section Footer ---------- */
+
+footer {
+    border-top: 1px solid #333;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px 0;
 }
