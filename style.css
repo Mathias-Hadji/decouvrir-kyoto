@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     font-family: Nunito sans, sans-serif;
@@ -127,7 +131,7 @@ nav a:hover::after {
 .container-home {
     width: 100%;
     height: 100vh;
-    background-image: url('/ressources/kyoto.jpg');
+    background-image: url('./ressources/kyoto.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -528,7 +532,7 @@ nav a:hover::after {
     justify-content: center;
     align-items: center;
     background:rgb(65, 65, 65);
-    background-image: url("/ressources/parallax-img.jpg");
+    background-image: url("./ressources/parallax-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
